@@ -1,5 +1,6 @@
 import React from 'react';
 import "./styles.css";
+import Weather from "./Weather"
 
 
 export default function App() {
@@ -52,7 +53,6 @@ export default function App() {
                             </li>
                           </ul>
                         </forms>
-                        <p class="ending-remark">Have a nice Day!</p>
                       </div>
                     </div>
                   </div>
@@ -66,6 +66,7 @@ export default function App() {
                 width="100"
               ></img>
               <p class="ending-remark">Have a nice Day!</p>
+              <Weather />
 
               <br />
               <p class="every">Forecast every 3 hours</p>
