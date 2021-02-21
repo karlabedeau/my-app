@@ -26,7 +26,7 @@ export default function App() {
                   <input
                     type="submit"
                     value="Search"
-                    class="form-control col-3 btn btn-primary"
+                    class="form-control col-3 btn btn-success"
                   />
                 </div>
               </form>
