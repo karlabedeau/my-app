@@ -75,7 +75,7 @@ export default function App() {
                 This
                 <a
                   class="open"
-                  href="https://github.com/karlabedeau/My-Weather-Forecast"
+                  href="https://github.com/karlabedeau/my-app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -83,7 +83,7 @@ export default function App() {
                 </a>
                 and
                 <a
-                  href="https://peaceful-liskov-c2f7e7.netlify.app/"
+                  href="https://practical-allen-6acde0.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
