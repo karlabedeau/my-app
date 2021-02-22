@@ -61,7 +61,7 @@ export default function App() {
 
               <img
                 class="seasons"
-                src="images/season_change.png"
+                src="images/season_changes.png"
                 alt=""
                 width="100"
               ></img>
