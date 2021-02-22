@@ -1,8 +1,8 @@
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
-  background-size: cover;
-  display: block;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  background-size: 1400px 1180px;
+  opacity: 90%;
 }
 
 .container {
