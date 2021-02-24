@@ -2,7 +2,6 @@ body {
   font-family: sans-serif;
   background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
   background-size: 1400px 1180px;
-  opacity: 100%;
 }
 
 .Weather {
