@@ -9,8 +9,8 @@ export default function App() {
             <div className="card-body">
               <h1 id="city">Montreal</h1>
               <ul className="date-and-time">
-                <li id="time">Tuesday 7:00</li>
-                <li id="description">Snow</li>
+                <li id="time">Saturday 6:00</li>
+                <li id="description">Rain</li>
               </ul>
               <br />
               <form className="weather-app" id="search-form">
@@ -35,18 +35,18 @@ export default function App() {
                 <div className="card-body">
                   <div className="row">
                     <div className="col-xl current-sky">
-                      <img src="#" alt="cloudy" id="icon" />
+                      <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="rain" id="icon" />
                       <span className="current-temperature"></span>
-                      <span className="units">°C</span>
+                      <span className="units">3°C|°F</span>
 
                       <div className="col-12">
                         <forms className="float-right">
                           <ul className="weather-percentage">
                             <li>
-                              Humidity: <span id="humidity"></span>%
+                              Humidity: <span id="humidity">94</span>%
                             </li>
                             <li>
-                              Wind: <span id="wind"></span>km/h
+                              Wind: <span id="wind">23</span>km/h
                             </li>
                           </ul>
                         </forms>
