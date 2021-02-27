@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
   background-size: 1400px 1180px;
 }
 
@@ -13,7 +13,7 @@ body {
   padding: 50px 100px;
   margin: 10px 20px;
   border-radius: 100px;
-  background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 .weather-app {
