@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import "./Weather.css";
 
 export default function App() {
-  return (
+  const [ready, setReady] = useState(false);
+  const [temperature, setTemperature] = useState(null);
+  function handleResponse(response) {
+    console.log(response.data);
+    setTemperature(response.data.main.temp);
+    setReady(true);
+  }
+
+  if (ready) {
+    return (
     <div className="App">
         <div className="vanilla-weather-app">
           <div className="card">
@@ -37,7 +47,7 @@ export default function App() {
                   <div className="row">
                     <div className="col-xl current-sky">
                       <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="rain" id="icon" />
-                      <span className="current-temperature">6</span>
+                      <span className="current-temperature">{Math.round (temperature)}</span>
                       <span className="units">°C|°F</span>
 
                       <div className="col-12">
@@ -75,5 +85,13 @@ export default function App() {
         </div>
     </div>
   );
+  } else {
+    const apikey = "cc18170596dd9fcd6f13e84c39a52c30";
+    let city = "Montreal";
+    let apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric';
+    axios.get(apiURL).then(handleResponse);
+
+    return "Loading...";
+  } 
 }
 
