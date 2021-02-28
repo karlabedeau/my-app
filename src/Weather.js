@@ -86,9 +86,9 @@ export default function App() {
     </div>
   );
   } else {
-    const apikey = "cc18170596dd9fcd6f13e84c39a52c30";
+    const apiKey = "cc18170596dd9fcd6f13e84c39a52c30";
     let city = "Montreal";
-    let apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric';
+    let apiURL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(handleResponse);
 
     return "Loading...";
