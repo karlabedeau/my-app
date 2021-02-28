@@ -19,6 +19,7 @@ export default function App() {
                     type="text"
                     placeholder="Enter city name here"
                     className="form-control col-9"
+                    autoFocus="on"
                     id="city-input"
                   />
                   <input
@@ -36,8 +37,8 @@ export default function App() {
                   <div className="row">
                     <div className="col-xl current-sky">
                       <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="rain" id="icon" />
-                      <span className="current-temperature"></span>
-                      <span className="units">3°C|°F</span>
+                      <span className="current-temperature">6</span>
+                      <span className="units">°C|°F</span>
 
                       <div className="col-12">
                         <forms className="float-right">
