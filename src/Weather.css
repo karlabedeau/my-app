@@ -4,10 +4,6 @@ body {
   background-size: 1400px 1180px;
 }
 
-.Weather {
-    background-color: yellow;
-}
-
 .container {
   max-width: 1000px;
   padding: 50px 100px;
@@ -66,6 +62,7 @@ li {
   position: relative;
   font-size: 18px;
   top: -32px;
+  margin-left: -5px;
 }
 
 .weather-percentage {
