@@ -80,7 +80,7 @@ export default function App(props) {
                 alt=""
                 width="100"
               ></img>
-              <p className="ending-remark">Have a nice Day!</p>
+              <p className="ending-remark">Have a nice Day!Working</p>
 
               <br />
               <p className="every">Forecast every 3 hours</p>
