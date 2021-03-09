@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FormattedDate from "./FormattedDate";
 import axios from 'axios';
 import "./Weather.css";
 import Loader from "react-loader-spinner";
@@ -11,7 +12,7 @@ export default function App(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: "Sunday 7:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
       wind: response.data.wind.speed,
@@ -27,7 +28,9 @@ export default function App(props) {
             <div className="card-body">
               <h1 id="city">{weatherData.city}</h1>
               <ul className="date-and-time">
-                <li id="time">{weatherData.date}</li>
+                <li id="time">
+                  <FormattedDate date={weatherData.date} />
+                </li>
                 <li className="text-capitalize" id="description">{weatherData.description}</li>
               </ul>
               <br />
