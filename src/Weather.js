@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from 'axios';
 import "./Weather.css";
 import Loader from "react-loader-spinner";
@@ -41,14 +41,6 @@ export default function App(props) {
         <div className="vanilla-weather-app">
           <div className="card">
             <div className="card-body">
-              <h1 id="city">{weatherData.city}</h1>
-              <ul className="date-and-time">
-                <li id="time">
-                  <FormattedDate date={weatherData.date} />
-                </li>
-                <li className="text-capitalize" id="description">{weatherData.description}</li>
-              </ul>
-              <br />
               <form onSubmit={handlesubmit} className="weather-app" id="search-form">
                 <div className="row">
                   <input
@@ -66,46 +58,10 @@ export default function App(props) {
                   />
                 </div>
               </form>
+              <WeatherInfo data={weatherData} />
               <br />
               <br />
 
-              <div className="card">
-                <div className="card-body">
-                  <div className="row">
-                    <div className="col-xl current-sky">
-                      <img src={weatherData.iconUrl} alt={weatherData.description} id="icon" />
-                      <span className="current-temperature">{Math.round (weatherData.temperature)}</span>
-                      <span className="units">°C|°F</span>
-
-                      <div className="col-12">
-                        <forms className="float-right">
-                          <ul className="weather-percentage">
-                            <li>
-                              Humidity: <span id="humidity">{weatherData.humidity}</span>%
-                            </li>
-                            <li>
-                              Wind: <span id="wind">{Math.round (weatherData.wind)}</span>km/h
-                            </li>
-                          </ul>
-                        </forms>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <img
-                className="seasons"
-                src="images/season_changes.png"
-                alt=""
-                width="100"
-              ></img>
-              <p className="ending-remark">Have a nice Day!</p>
-
-              <br />
-              <p className="every">Forecast of the Day</p>
-
-              <div className="row weather-forecast" id="forecast"></div>
             </div>
           </div>
         </div>
