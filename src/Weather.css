@@ -83,11 +83,10 @@ li {
 }
 
 .seasons {
-  float: right;
-  position: absolute;
-  right: 40px;
+  position: fixed;
+  right: 480px;
   width: 279px;
-  bottom: 80x;
+  left: 100;
 }
 
 .current-temperature {

@@ -41,7 +41,7 @@ export default function App(props) {
         <div className="vanilla-weather-app">
           <div className="card">
             <div className="card-body">
-              <form onSubmit={handlesubmit} className="weather-app" id="search-form">
+              <form onSubmit={handleSubmit} className="weather-app" id="search-form">
                 <div className="row">
                   <input
                     type="text"
