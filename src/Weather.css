@@ -77,16 +77,16 @@ li {
   float: right;
   position: absolute;
   right: 120px;
-  bottom: 70px;
+  bottom: 96px;
   font-weight: bolder;
   font-size: 20px;
 }
 
 .seasons {
   position: fixed;
+  bottom: 296px;
   right: 480px;
   width: 279px;
-  left: 100;
 }
 
 .current-temperature {
