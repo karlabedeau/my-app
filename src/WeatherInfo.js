@@ -13,30 +13,32 @@ export default function WeatherInfo(props) {
         </ul>
         <br />
 
+        
         <div className="card">
-            <div className="card-body">
-                <div className="row">
-                    <div className="col-xl current-sky">
-                        <img src={props.data.iconUrl} alt={props.data.description} id="icon" />
-                        <span className="current-temperature">{Math.round (props.data.temperature)}</span>
-                        <span className="units">°C|°F</span>
+        <div className="card-body">      
+        <div className="row">
+            <div className="col-xl current-sky">
+                <img src={props.data.iconUrl} alt={props.data.description} id="icon" />
+                <span className="current-temperature">{Math.round (props.data.temperature)}</span>
+                <span className="units">°C|°F</span>
 
-                        <div className="col-12">
-                            <forms className="float-right">
-                                <ul className="weather-percentage">
-                                    <li>
-                                        Humidity: <span id="humidity">{props.data.humidity}</span>%
-                                    </li>
-                                    <li>
-                                        Wind: <span id="wind">{Math.round (props.data.wind)}</span>km/h
-                                    </li>
-                                </ul>
-                            </forms>
-                        </div>
-                    </div>
+                <div className="col-12">
+                    <forms className="float-right">
+                        <ul className="weather-percentage">
+                            <li>
+                                Humidity: <span id="humidity">{props.data.humidity}</span>%
+                            </li>
+                            <li>
+                                Wind: <span id="wind">{Math.round (props.data.wind)}</span>km/h
+                            </li>
+                        </ul>
+                    </forms>
                 </div>
             </div>
         </div>
+        </div>
+        </div>    
+    
 
         <img
             className="seasons"

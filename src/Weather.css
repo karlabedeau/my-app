@@ -26,6 +26,7 @@ h1 {
 }
 
 .date-and-time {
+  margin-bottom: -20px;
   padding: 1px;
 }
 
@@ -66,26 +67,26 @@ li {
 
 .weather-percentage {
   position: relative;
-  right: -25px;
+  right: 295px;
   bottom: 110px;
   padding-top: 50px;
 }
 
 .ending-remark {
   font-family: "Architects Daughter", cursive;
-  float: right;
+  float: left;
   position: absolute;
-  right: 120px;
-  bottom: 96px;
+  right: 115px;
+  bottom: 133px;
   font-weight: bolder;
   font-size: 20px;
 }
 
 .seasons {
   position: fixed;
-  bottom: 296px;
-  right: 480px;
-  width: 279px;
+  bottom: 290px;
+  right: 500px;
+  width: 250px;
 }
 
 .current-temperature {
