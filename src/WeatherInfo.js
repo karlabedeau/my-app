@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
         <div className="row">
             <div className="col-xl current-sky">
                 <div className="float-left">
-                    <WeatherInfo code={props.data.icon} />
+                    <WeatherIcon code={props.data.icon} />
                 </div>
             
                 <span className="current-temperature">{Math.round (props.data.temperature)}</span>
