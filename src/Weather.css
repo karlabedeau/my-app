@@ -52,7 +52,7 @@ li {
   padding: 20px;
 }
 
-.current-sky img {
+.current-sky canvas {
   float: left;
   margin-right: 7px;
   width: 64px;
