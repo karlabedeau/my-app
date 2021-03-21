@@ -53,9 +53,6 @@ export default function WeatherInfo(props) {
         ></img>
         <p className="ending-remark">Have a nice Day!</p>
 
-        <br />
-        <p className="every">Forecast of the Day</p>
-
         <div className="row weather-forecast" id="forecast"></div>
                     
                 
