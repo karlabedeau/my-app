@@ -75,8 +75,8 @@ li {
   font-family: "Architects Daughter", cursive;
   float: left;
   position: absolute;
-  right: 115px;
-  bottom: 133px;
+  right: 80px;
+  bottom: 78px;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -84,7 +84,7 @@ li {
 .seasons {
   position: fixed;
   bottom: 290px;
-  right: 500px;
+  right: 470px;
   width: 250px;
 }
 
